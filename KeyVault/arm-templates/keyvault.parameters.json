@@ -1,0 +1,23 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "keyVaultName": {
+            "value": "mvKeyVault01",
+            "type": "string",
+      "metadata": {
+        "description": "The name of the resource group to create the Azure Key Vault in."
+      }
+        },
+        "resourceGroupName": {
+            "value": "mvSecurityRG"
+        },
+        "region": {
+            "value": "westus"
+        },
+        "type": "string",
+      "metadata": {
+        "description": "The name of the resource group to create the Azure Key Vault in."
+      }
+    }
+}
