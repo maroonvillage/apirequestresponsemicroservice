@@ -5,19 +5,19 @@
     "keyVaultName": {
       "type": "string",
       "metadata": {
-        "description": "The name of the Azure Key Vault to be created."
+        "description": "Name of the KeyVault"
       }
     },
-  "resourceGroupName": {
+    "resourceGroupName": {
       "type": "string",
       "metadata": {
-        "description": "The name of the resource group to create the Azure Key Vault in."
+        "description": "Name of the resource group"
       }
     },
-    "region": {
+    "location": {
       "type": "string",
       "metadata": {
-        "description": "The region to deploy the Azure Key Vault to."
+        "description": "Region where the resources should be created"
       }
     }
   },
@@ -27,7 +27,7 @@
       "type": "Microsoft.KeyVault/vaults",
       "apiVersion": "2019-09-01",
       "name": "[parameters('keyVaultName')]",
-      "location": "[parameters('region')]",
+      "location": "[parameters('location')]",
       "properties": {
         "sku": {
           "family": "A",

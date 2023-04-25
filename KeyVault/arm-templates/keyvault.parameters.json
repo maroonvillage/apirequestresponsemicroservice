@@ -4,20 +4,15 @@
     "parameters": {
         "keyVaultName": {
             "value": "mvKeyVault01",
-            "type": "string",
-      "metadata": {
-        "description": "The name of the resource group to create the Azure Key Vault in."
-      }
+            "metadata": {
+                "description": "The name of the resource group to create the Azure Key Vault in."
+            }
         },
         "resourceGroupName": {
             "value": "mvSecurityRG"
         },
-        "region": {
+        "location": {
             "value": "westus"
-        },
-        "type": "string",
-      "metadata": {
-        "description": "The name of the resource group to create the Azure Key Vault in."
-      }
+        }
     }
 }
